@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Personal Portfolio  Your Name</title>
+    <title>Nabin Gautam</title>
     <meta name="description" content="Personal portfolio of Your Name — Developer, Designer, Creator." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,17 +11,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="antialiased text-gray-900 bg-gradient-to-br from-white via-gray-50 to-gray-100">
+  <body class="antialiased text-gray-200 bg-gradient-to-br from-gray-900 via-gray-800 to-black">
     <!-- NAV -->
-    <header class="sticky top-0 z-40 backdrop-blur bg-white/60 border-b border-gray-200">
+    <header class="sticky top-0 z-40 backdrop-blur bg-black/40 border-b border-white/5">
       <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#home" class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-lg bg-gradient-to-tr from-teal-400 to-amber-400 flex items-center justify-center shadow-md">
+          <div class="w-10 h-10 rounded-lg bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center shadow-md">
             <span class="font-bold text-white">YN</span>
           </div>
           <div class="hidden sm:block">
             <p class="text-sm font-semibold">Your Name</p>
-            <p class="text-xs text-gray-600">Frontend • UI/UX</p>
+            <p class="text-xs text-gray-400">Frontend • UI/UX</p>
           </div>
         </a>
 
@@ -34,25 +34,25 @@
         </nav>
 
         <div class="flex items-center gap-3">
-          <a class="hidden sm:inline-block bg-teal-700 hover:bg-teal-600 text-white text-sm px-4 py-2 rounded-md shadow" href="assets/resume.pdf" download>Resume</a>
+          <a class="hidden sm:inline-block bg-indigo-600 hover:bg-indigo-500 text-white text-sm px-4 py-2 rounded-md shadow" href="assets/resume.pdf" download>Resume</a>
           <button id="theme-toggle" class="w-10 h-10 rounded-md bg-white/5 flex items-center justify-center hover:bg-white/10" aria-label="Toggle theme">
-            <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-teal-800" viewBox="0 0 20 20" fill="currentColor"></svg>
+            <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a.75.75 0 01.75.75V4a.75.75 0 01-1.5 0V2.75A.75.75 0 0110 2zM4.22 4.22a.75.75 0 011.06 0L6.5 5.44a.75.75 0 11-1.06 1.06L4.22 5.28a.75.75 0 010-1.06zM2 10a.75.75 0 01.75-.75H4a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm8 6a.75.75 0 01.75.75V18a.75.75 0 01-1.5 0v-1.25A.75.75 0 0110 16zM15.78 15.78a.75.75 0 011.06 1.06l-1.22 1.22a.75.75 0 11-1.06-1.06l1.22-1.22zM16 10a.75.75 0 01.75-.75H18a.75.75 0 010 1.5h-1.25A.75.75 0 0116 10zM6.5 14.56a.75.75 0 111.06-1.06l1.22 1.22a.75.75 0 11-1.06 1.06l-1.22-1.22z"/></svg>
           </button>
 
           <button id="mobile-menu-button" class="lg:hidden w-10 h-10 rounded-md bg-white/5 flex items-center justify-center hover:bg-white/10" aria-label="Open menu">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
         </div>
       </div>
 
-      <div id="mobile-menu" class="lg:hidden hidden border-t border-gray-200 bg-white/60">
+      <div id="mobile-menu" class="lg:hidden hidden border-t border-white/5 bg-black/60">
         <div class="px-6 py-4 flex flex-col gap-3">
           <a class="nav-link" href="#about">About</a>
           <a class="nav-link" href="#skills">Skills</a>
           <a class="nav-link" href="#experience">Experience</a>
           <a class="nav-link" href="#projects">Projects</a>
           <a class="nav-link" href="#contact">Contact</a>
-          <a class="bg-teal-700 hover:bg-teal-600 text-white text-sm px-4 py-2 rounded-md shadow inline-block mt-2" href="assets/resume.pdf" download>Resume</a>
+          <a class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm px-4 py-2 rounded-md shadow inline-block mt-2" href="assets/resume.pdf" download>Resume</a>
         </div>
       </div>
     </header>
@@ -61,38 +61,38 @@
       <!-- HERO -->
       <section id="home" class="pt-6 pb-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div>
-          <p class="text-sm text-teal-800 font-medium">Hello — I’m</p>
+          <p class="text-sm text-indigo-400 font-medium">Hello — I’m</p>
           <h1 class="mt-2 text-4xl sm:text-5xl font-extrabold leading-tight">Your Name
-            <span class="block text-teal-800 text-2xl font-semibold mt-2">Full-Stack Developer & UI/UX Designer</span>
+            <span class="block text-indigo-400 text-2xl font-semibold mt-2">Full-Stack Developer & UI/UX Designer</span>
           </h1>
-          <p class="mt-6 text-gray-700 max-w-xl">I build beautiful, accessible, and performant web experiences. I specialize in modern frontend development, design systems, and delightful interactions that help products stand out.</p>
+          <p class="mt-6 text-gray-300 max-w-xl">I build beautiful, accessible, and performant web experiences. I specialize in modern frontend development, design systems, and delightful interactions that help products stand out.</p>
 
           <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#projects" class="inline-flex items-center gap-2 px-5 py-3 bg-teal-700 hover:bg-teal-600 rounded-md text-white shadow">View Projects</a>
+            <a href="#projects" class="inline-flex items-center gap-2 px-5 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-md text-white shadow">View Projects</a>
             <a href="#contact" class="inline-flex items-center gap-2 px-5 py-3 bg-white/6 hover:bg-white/10 rounded-md text-white">Get in Touch</a>
           </div>
 
           <div class="mt-8 grid grid-cols-3 gap-3 sm:grid-cols-3 max-w-md">
-            <div class="stat-card p-4 rounded-lg bg-white/60">
+            <div class="stat-card p-4 rounded-lg bg-white/3">
               <p class="text-2xl font-bold">3+</p>
-              <p class="text-sm text-gray-700">Years Experience</p>
+              <p class="text-sm text-gray-300">Years Experience</p>
             </div>
-            <div class="stat-card p-4 rounded-lg bg-white/60">
+            <div class="stat-card p-4 rounded-lg bg-white/3">
               <p class="text-2xl font-bold">20+</p>
-              <p class="text-sm text-gray-700">Projects</p>
+              <p class="text-sm text-gray-300">Projects</p>
             </div>
-            <div class="stat-card p-4 rounded-lg bg-white/60">
+            <div class="stat-card p-4 rounded-lg bg-white/3">
               <p class="text-2xl font-bold">UX + Code</p>
-              <p class="text-sm text-gray-700">Design & Development</p>
+              <p class="text-sm text-gray-300">Design & Development</p>
             </div>
           </div>
         </div>
 
         <div class="order-first lg:order-last flex items-center justify-center">
-          <div class="w-64 h-64 sm:w-80 sm:h-80 rounded-2xl bg-gradient-to-tr from-teal-700 to-amber-400 p-1 shadow-xl transform hover:scale-105 transition">
+          <div class="w-64 h-64 sm:w-80 sm:h-80 rounded-2xl bg-gradient-to-tr from-indigo-600 to-pink-500 p-1 shadow-xl transform hover:scale-105 transition">
             <div class="w-full h-full rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center">
               <!-- Placeholder avatar -->
-              <svg width="160" height="160" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-gray-600">
+              <svg width="160" height="160" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-gray-200">
                 <rect width="24" height="24" rx="6" fill="url(#g)"/>
                 <defs>
                   <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
@@ -115,26 +115,26 @@
         <h2 class="section-title">About</h2>
         <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           <div class="space-y-4">
-            <p class="text-gray-700">I’m a developer who cares about building well-crafted products. I focus on clean interfaces, performance and accessibility. I love collaborating with cross-functional teams to turn ideas into delightful experiences.</p>
-            <p class="text-gray-700">My toolkit ranges from semantic HTML, modern CSS and JavaScript to design systems and prototyping. Outside work I enjoy photography, reading, and experimenting with side projects.</p>
+            <p class="text-gray-300">I’m a developer who cares about building well-crafted products. I focus on clean interfaces, performance and accessibility. I love collaborating with cross-functional teams to turn ideas into delightful experiences.</p>
+            <p class="text-gray-300">My toolkit ranges from semantic HTML, modern CSS and JavaScript to design systems and prototyping. Outside work I enjoy photography, reading, and experimenting with side projects.</p>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div class="p-4 rounded-lg bg-white/60">
+            <div class="p-4 rounded-lg bg-white/3">
               <h3 class="font-semibold">Fast Learner</h3>
-              <p class="text-sm text-gray-700 mt-2">Continuously absorbing new tools and patterns.</p>
+              <p class="text-sm text-gray-300 mt-2">Continuously absorbing new tools and patterns.</p>
             </div>
-            <div class="p-4 rounded-lg bg-white/60">
+            <div class="p-4 rounded-lg bg-white/3">
               <h3 class="font-semibold">Collaborative</h3>
-              <p class="text-sm text-gray-700 mt-2">Open communicator who values feedback and clarity.</p>
+              <p class="text-sm text-gray-300 mt-2">Open communicator who values feedback and clarity.</p>
             </div>
-            <div class="p-4 rounded-lg bg-white/60">
+            <div class="p-4 rounded-lg bg-white/3">
               <h3 class="font-semibold">Accessible</h3>
-              <p class="text-sm text-gray-700 mt-2">Designing inclusive experiences for all users.</p>
+              <p class="text-sm text-gray-300 mt-2">Designing inclusive experiences for all users.</p>
             </div>
-            <div class="p-4 rounded-lg bg-white/60">
+            <div class="p-4 rounded-lg bg-white/3">
               <h3 class="font-semibold">Performance</h3>
-              <p class="text-sm text-gray-700 mt-2">Optimized frontends for speed and resilience.</p>
+              <p class="text-sm text-gray-300 mt-2">Optimized frontends for speed and resilience.</p>
             </div>
           </div>
         </div>
@@ -143,10 +143,10 @@
       <!-- SKILLS -->
       <section id="skills" class="pt-8 pb-12">
         <h2 class="section-title">Skills</h2>
-        <p class="text-gray-600 mt-2">Technologies and tools I use frequently.</p>
+        <p class="text-gray-400 mt-2">Technologies and tools I use frequently.</p>
 
         <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div class="p-4 rounded-lg bg-white/60">
+          <div class="p-4 rounded-lg bg-white/3">
             <h4 class="font-semibold">Languages</h4>
             <div class="mt-3 flex flex-wrap gap-2">
               <span class="skill">JavaScript</span>
@@ -157,7 +157,7 @@
             </div>
           </div>
 
-          <div class="p-4 rounded-lg bg-white/60">
+          <div class="p-4 rounded-lg bg-white/3">
             <h4 class="font-semibold">Frameworks & Tools</h4>
             <div class="mt-3 flex flex-wrap gap-2">
               <span class="skill">React</span>
@@ -168,7 +168,7 @@
             </div>
           </div>
 
-          <div class="p-4 rounded-lg bg-white/60">
+          <div class="p-4 rounded-lg bg-white/3">
             <h4 class="font-semibold">Core Fundamentals</h4>
             <div class="mt-3 flex flex-wrap gap-2">
               <span class="skill">Accessibility</span>
@@ -184,23 +184,23 @@
       <section id="experience" class="pt-8 pb-12">
         <h2 class="section-title">Experience & Education</h2>
         <div class="mt-6 relative">
-          <div class="absolute left-5 top-0 bottom-0 w-0.5 bg-gray-200 hidden sm:block"></div>
+          <div class="absolute left-5 top-0 bottom-0 w-0.5 bg-white/6 hidden sm:block"></div>
           <div class="space-y-8 pl-8 sm:pl-12">
             <div class="timeline-item">
-              <div class="timeline-dot bg-teal-500"></div>
+              <div class="timeline-dot bg-indigo-500"></div>
               <div class="timeline-content">
                 <h3 class="font-semibold">B.Sc. in Computer Science — University Name</h3>
-                  <p class="text-sm text-gray-600">2018 — 2022 · Key courses: Algorithms, Databases, Web Technologies</p>
-                  <p class="mt-2 text-gray-700">Graduated with honors; capstone on progressive web apps.</p>
+                <p class="text-sm text-gray-400">2018 — 2022 · Key courses: Algorithms, Databases, Web Technologies</p>
+                <p class="mt-2 text-gray-300">Graduated with honors; capstone on progressive web apps.</p>
               </div>
             </div>
 
             <div class="timeline-item">
-              <div class="timeline-dot bg-amber-500"></div>
+              <div class="timeline-dot bg-pink-500"></div>
               <div class="timeline-content">
                 <h3 class="font-semibold">Frontend Developer — Company Name</h3>
-                <p class="text-sm text-gray-600">2022 — Present · Focused on component libraries and performance</p>
-                <p class="mt-2 text-gray-700">Worked on a design system used across multiple products, improving consistency and delivery speed.</p>
+                <p class="text-sm text-gray-400">2022 — Present · Focused on component libraries and performance</p>
+                <p class="mt-2 text-gray-300">Worked on a design system used across multiple products, improving consistency and delivery speed.</p>
               </div>
             </div>
           </div>
@@ -210,47 +210,47 @@
       <!-- PROJECTS -->
       <section id="projects" class="pt-8 pb-12">
         <h2 class="section-title">Featured Projects</h2>
-        <p class="text-gray-600 mt-2">A selection of recent work including links to live demos and source code.</p>
+        <p class="text-gray-400 mt-2">A selection of recent work including links to live demos and source code.</p>
 
         <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Card -->
-          <article class="project-card p-5 rounded-xl bg-white/70 hover:scale-105 transition-shadow shadow-md">
+          <article class="project-card p-5 rounded-xl bg-white/4 hover:scale-105 transition-shadow shadow-md">
             <h3 class="font-semibold">Project One</h3>
-            <p class="text-sm text-gray-700 mt-2">A modern web app that demonstrates excellent UX and performant frontend patterns.</p>
+            <p class="text-sm text-gray-300 mt-2">A modern web app that demonstrates excellent UX and performant frontend patterns.</p>
             <div class="mt-3 flex flex-wrap gap-2">
               <span class="tag">React</span>
               <span class="tag">Tailwind</span>
               <span class="tag">Vite</span>
             </div>
             <div class="mt-4 flex items-center gap-3">
-              <a class="text-teal-800 hover:underline" href="#" target="_blank">Live Demo</a>
-              <a class="text-gray-700 hover:underline" href="#" target="_blank">GitHub</a>
+              <a class="text-indigo-400 hover:underline" href="#" target="_blank">Live Demo</a>
+              <a class="text-gray-300 hover:underline" href="#" target="_blank">GitHub</a>
             </div>
           </article>
 
-          <article class="project-card p-5 rounded-xl bg-white/70 hover:scale-105 transition-shadow shadow-md">
+          <article class="project-card p-5 rounded-xl bg-white/4 hover:scale-105 transition-shadow shadow-md">
             <h3 class="font-semibold">Project Two</h3>
-            <p class="text-sm text-gray-700 mt-2">An interactive data visualization and analytics dashboard.</p>
+            <p class="text-sm text-gray-300 mt-2">An interactive data visualization and analytics dashboard.</p>
             <div class="mt-3 flex flex-wrap gap-2">
               <span class="tag">D3</span>
               <span class="tag">React</span>
             </div>
             <div class="mt-4 flex items-center gap-3">
-              <a class="text-teal-800 hover:underline" href="#" target="_blank">Live Demo</a>
-              <a class="text-gray-700 hover:underline" href="#" target="_blank">GitHub</a>
+              <a class="text-indigo-400 hover:underline" href="#" target="_blank">Live Demo</a>
+              <a class="text-gray-300 hover:underline" href="#" target="_blank">GitHub</a>
             </div>
           </article>
 
-          <article class="project-card p-5 rounded-xl bg-white/70 hover:scale-105 transition-shadow shadow-md">
+          <article class="project-card p-5 rounded-xl bg-white/4 hover:scale-105 transition-shadow shadow-md">
             <h3 class="font-semibold">Project Three</h3>
-            <p class="text-sm text-gray-700 mt-2">A performant static site with advanced accessibility features.</p>
+            <p class="text-sm text-gray-300 mt-2">A performant static site with advanced accessibility features.</p>
             <div class="mt-3 flex flex-wrap gap-2">
               <span class="tag">HTML</span>
               <span class="tag">CSS</span>
             </div>
             <div class="mt-4 flex items-center gap-3">
-              <a class="text-teal-800 hover:underline" href="#" target="_blank">Live Demo</a>
-              <a class="text-gray-700 hover:underline" href="#" target="_blank">GitHub</a>
+              <a class="text-indigo-400 hover:underline" href="#" target="_blank">Live Demo</a>
+              <a class="text-gray-300 hover:underline" href="#" target="_blank">GitHub</a>
             </div>
           </article>
         </div>
@@ -259,39 +259,39 @@
       <!-- CONTACT -->
       <section id="contact" class="pt-8 pb-12">
         <h2 class="section-title">Contact</h2>
-        <p class="text-gray-600 mt-2">Want to work together or ask a question? Send a message — I reply within a few business days.</p>
+        <p class="text-gray-400 mt-2">Want to work together or ask a question? Send a message — I reply within a few business days.</p>
 
         <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <form id="contact-form" class="space-y-4 bg-white/60 p-6 rounded-lg">
+          <form id="contact-form" class="space-y-4 bg-white/3 p-6 rounded-lg">
             <div>
-              <label class="text-sm text-gray-700">Name</label>
-              <input name="name" required class="mt-1 w-full bg-transparent border border-white/10 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-teal-500" />
+              <label class="text-sm text-gray-200">Name</label>
+              <input name="name" required class="mt-1 w-full bg-transparent border border-white/10 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500" />
             </div>
             <div>
-              <label class="text-sm text-gray-700">Email</label>
-              <input type="email" name="email" required class="mt-1 w-full bg-transparent border border-white/10 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-teal-500" />
+              <label class="text-sm text-gray-200">Email</label>
+              <input type="email" name="email" required class="mt-1 w-full bg-transparent border border-white/10 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500" />
             </div>
             <div>
-              <label class="text-sm text-gray-700">Subject</label>
-              <input name="subject" class="mt-1 w-full bg-transparent border border-white/10 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-teal-500" />
+              <label class="text-sm text-gray-200">Subject</label>
+              <input name="subject" class="mt-1 w-full bg-transparent border border-white/10 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500" />
             </div>
             <div>
-              <label class="text-sm text-gray-700">Message</label>
-              <textarea name="message" rows="5" required class="mt-1 w-full bg-transparent border border-white/10 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+              <label class="text-sm text-gray-200">Message</label>
+              <textarea name="message" rows="5" required class="mt-1 w-full bg-transparent border border-white/10 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
             </div>
             <div>
-              <button type="submit" class="inline-flex items-center gap-2 px-4 py-2 bg-teal-700 hover:bg-teal-600 rounded-md">Send Message</button>
+              <button type="submit" class="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-md">Send Message</button>
             </div>
             <p id="form-feedback" class="text-sm text-green-400 hidden"></p>
           </form>
 
           <div class="space-y-4">
-            <div class="p-4 rounded-lg bg-white/60">
+            <div class="p-4 rounded-lg bg-white/3">
               <h4 class="font-semibold">Email</h4>
-              <a class="text-teal-800 hover:underline" href="mailto:youremail@example.com">youremail@example.com</a>
+              <a class="text-indigo-400 hover:underline" href="mailto:youremail@example.com">youremail@example.com</a>
             </div>
 
-            <div class="p-4 rounded-lg bg-white/60">
+            <div class="p-4 rounded-lg bg-white/3">
               <h4 class="font-semibold">Social</h4>
               <div class="mt-3 flex gap-3">
                 <a class="social" href="#" aria-label="GitHub">GitHub</a>
@@ -300,21 +300,21 @@
               </div>
             </div>
 
-            <div class="p-4 rounded-lg bg-white/60">
+            <div class="p-4 rounded-lg bg-white/3">
               <h4 class="font-semibold">Location</h4>
-              <p class="text-sm text-gray-700 mt-2">City, Country — Open to remote and local opportunities.</p>
+              <p class="text-sm text-gray-300 mt-2">City, Country — Open to remote and local opportunities.</p>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="border-t border-gray-200 py-6 mt-12">
+    <footer class="border-t border-white/5 py-6 mt-12">
       <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
-        <p class="text-gray-600">© <span id="year"></span> Your Name. All rights reserved.</p>
+        <p class="text-gray-400">© <span id="year"></span> Your Name. All rights reserved.</p>
         <div class="flex gap-4">
-          <a class="text-gray-600 hover:text-gray-900" href="#">Privacy</a>
-          <a class="text-gray-600 hover:text-gray-900" href="#">Terms</a>
+          <a class="text-gray-400 hover:text-white" href="#">Privacy</a>
+          <a class="text-gray-400 hover:text-white" href="#">Terms</a>
         </div>
       </div>
     </footer>

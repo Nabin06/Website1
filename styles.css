@@ -1,25 +1,25 @@
-:root{--glass: rgba(255,255,255,0.6)}
-:root{--muted:#6B7280}
+:root{--glass: rgba(255,255,255,0.05)}
+:root{--muted:#9CA3AF}
 html{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
 
 /* Generic section title */
-.section-title{font-size:1.25rem;font-weight:700;color:#0f172a}
+.section-title{font-size:1.25rem;font-weight:700;color:#e6eef8}
 
-.stat-card{backdrop-filter:blur(6px);border:1px solid rgba(15,23,42,0.04);background:linear-gradient(180deg,rgba(255,255,255,0.8),rgba(255,255,255,0.85))}
+.stat-card{backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.03)}
 
-.skill{background:linear-gradient(90deg,rgba(6,78,59,0.04),rgba(6,78,59,0.02));padding:0.35rem 0.6rem;border-radius:999px;font-size:0.85rem;color:#064e3b}
+.skill{background:linear-gradient(90deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));padding:0.35rem 0.6rem;border-radius:999px;font-size:0.85rem;color:#e6eef8}
 
-.project-card{border:1px solid rgba(15,23,42,0.04);background:linear-gradient(180deg,rgba(255,255,255,0.9),rgba(255,255,255,0.95))}
-.tag{background:rgba(6,95,70,0.04);padding:0.25rem 0.5rem;border-radius:6px;font-size:0.75rem;color:#065f46}
+.project-card{border:1px solid rgba(255,255,255,0.03)}
+.tag{background:rgba(255,255,255,0.03);padding:0.25rem 0.5rem;border-radius:6px;font-size:0.75rem;color:#cbd5e1}
 
 .timeline-item{position:relative;padding-left:1.5rem}
 .timeline-dot{width:12px;height:12px;border-radius:999px;position:absolute;left:-1.5rem;top:0.5rem}
 .timeline-content{background:transparent}
 
-.nav-link{color:rgba(15,23,42,0.8)}
-.nav-link:hover{color:rgba(15,23,42,1)}
+.nav-link{color:rgba(255,255,255,0.75)}
+.nav-link:hover{color:white}
 
-.social{background:rgba(15,23,42,0.04);padding:0.4rem 0.6rem;border-radius:8px;color:#374151}
+.social{background:rgba(255,255,255,0.02);padding:0.4rem 0.6rem;border-radius:8px;color:#cbd5e1}
 
 /* small utilities */
 :focus{outline:none}
@@ -37,4 +37,4 @@ button, a{transition:all 180ms ease}
 
 /* form inputs placeholder color */
 input, textarea{color:inherit}
-input::placeholder, textarea::placeholder{color:rgba(15,23,42,0.35)}
+input::placeholder, textarea::placeholder{color:rgba(255,255,255,0.35)}

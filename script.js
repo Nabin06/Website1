@@ -16,17 +16,15 @@
   if(stored) {
     if(stored === 'dark') html.classList.add('dark'); else html.classList.remove('dark');
   } else {
-    // default to light (no 'dark' class)
-    html.classList.remove('dark');
+    // default to dark
+    html.classList.add('dark');
   }
 
   function updateThemeIcon(){
     if(html.classList.contains('dark')){
-      // show moon icon for dark
-      themeIcon.innerHTML = '<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>';
+      themeIcon.innerHTML = '<path d="M10 2a.75.75 0 01.75.75V4a.75.75 0 01-1.5 0V2.75A.75.75 0 0110 2zM4.22 4.22a.75.75 0 011.06 0L6.5 5.44a.75.75 0 11-1.06 1.06L4.22 5.28a.75.75 0 010-1.06zM2 10a.75.75 0 01.75-.75H4a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm8 6a.75.75 0 01.75.75V18a.75.75 0 01-1.5 0v-1.25A.75.75 0 0110 16zM15.78 15.78a.75.75 0 011.06 1.06l-1.22 1.22a.75.75 0 11-1.06-1.06l1.22-1.22zM16 10a.75.75 0 01.75-.75H18a.75.75 0 010 1.5h-1.25A.75.75 0 0116 10zM6.5 14.56a.75.75 0 111.06-1.06l1.22 1.22a.75.75 0 11-1.06 1.06l-1.22-1.22z"/>';
     } else {
-      // show sun icon for light
-      themeIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v2M12 19v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42M12 7a5 5 0 100 10 5 5 0 000-10z"/>';
+      themeIcon.innerHTML = '<path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16z" clip-rule="evenodd"/>';
     }
   }
   updateThemeIcon();
@@ -53,9 +51,9 @@
       const id = e.target.id;
       const link = document.querySelectorAll(`a[href="#${id}"]`);
       if(e.isIntersecting){
-        link.forEach(l=>l.classList.add('text-teal-800'));
+        link.forEach(l=>l.classList.add('text-indigo-300'));
       } else {
-        link.forEach(l=>l.classList.remove('text-teal-800'));
+        link.forEach(l=>l.classList.remove('text-indigo-300'));
       }
     });
   }, {root:null, threshold:0.45});
